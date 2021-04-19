@@ -21,15 +21,40 @@ struct CrosswordView: View {
     @State var blockText = generateRepaetStringArray(size: 6, string: " ")
     @State var selectedIndex = 0
     
-    var body: some View {
-        VStack {
-            createBlock(0, tip: 1)
-            HStack {
-                createBlock(1, tip: 2)
-                createBlock(2)
-                createBlock(3)
+    var selectedBinding: Binding<String> {
+        Binding<String>(
+            get: {
+                blockText[selectedIndex]
+            },
+            set: {
+                blockText[selectedIndex] = $0
             }
-            createBlock(4)
+        )
+    }
+    
+    var body: some View {
+        ZStack {
+            CrosswordKeyboard(text: selectedBinding)
+            
+            VStack {
+                ZStack {
+                    createBlock(0)
+                    createBlock(5, tip: 1)
+                }
+                HStack {
+                    createBlock(1, tip: 2)
+                    createBlock(2)
+                    createBlock(3)
+                }
+                createBlock(4)
+                
+                Group {
+                Text("1. Type of vehicle")
+                    .padding()
+                Text("2. Type of animal")
+                    .padding()
+                }.padding()
+            }
         }
     }
     
