@@ -11,6 +11,8 @@
 		95340A7B262D940200C2F124 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95340A7A262D940200C2F124 /* ContentView.swift */; };
 		95340A7D262D940200C2F124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95340A7C262D940200C2F124 /* Assets.xcassets */; };
 		95340A80262D940200C2F124 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95340A7F262D940200C2F124 /* Preview Assets.xcassets */; };
+		95340A89262D942800C2F124 /* CrosswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95340A88262D942800C2F124 /* CrosswordView.swift */; };
+		95340A8C262D944C00C2F124 /* CrosswordBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95340A8B262D944C00C2F124 /* CrosswordBlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		95340A7C262D940200C2F124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95340A7F262D940200C2F124 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95340A81262D940200C2F124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95340A88262D942800C2F124 /* CrosswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordView.swift; sourceTree = "<group>"; };
+		95340A8B262D944C00C2F124 /* CrosswordBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordBlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				95340A78262D940200C2F124 /* CrossWordApp.swift */,
 				95340A7A262D940200C2F124 /* ContentView.swift */,
+				95340A88262D942800C2F124 /* CrosswordView.swift */,
+				95340A8B262D944C00C2F124 /* CrosswordBlockView.swift */,
 				95340A7C262D940200C2F124 /* Assets.xcassets */,
 				95340A81262D940200C2F124 /* Info.plist */,
 				95340A7E262D940200C2F124 /* Preview Content */,
@@ -140,6 +146,8 @@
 			files = (
 				95340A7B262D940200C2F124 /* ContentView.swift in Sources */,
 				95340A79262D940200C2F124 /* CrossWordApp.swift in Sources */,
+				95340A89262D942800C2F124 /* CrosswordView.swift in Sources */,
+				95340A8C262D944C00C2F124 /* CrosswordBlockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
